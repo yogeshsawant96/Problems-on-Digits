@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<conio.h>
- int count(int,int);
+ int countOcc(int,int);
  int main()
  {
 	 int iNo=0,iRet=0,fNo=0;
@@ -8,10 +8,10 @@
 	 scanf("%d",&iNo);
 	 printf("Enter Number to find Occ : : ");
 	 scanf("%d",&fNo);
-	 iRet=count(iNo,fNo);
+	 iRet=countOcc(iNo,fNo);
 	 printf("Occuarance : %d",iRet);
  }
- int count(int no,int fno)
+ int countOcc(int no,int fno)
  {
 	 int icnt=0,iDig=0;
 	 while(no>0)
